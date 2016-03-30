@@ -34,7 +34,7 @@ class Circle: UIView {
     self.layer.borderColor = UIColor.blackColor().CGColor
     self.layer.borderWidth = 2.0
     
-    var keep = UILabel(frame: CGRectMake(0, 0, viewSize.width/6, viewSize.width/6))
+    let keep = UILabel(frame: CGRectMake(0, 0, viewSize.width/6, viewSize.width/6))
     keep.center = CGPointMake(viewSize.width/6, self.frame.size.height/2)
     keep.backgroundColor = UIColor.yellowColor()
     keep.layer.masksToBounds = true
@@ -43,7 +43,7 @@ class Circle: UIView {
     keep.textAlignment = NSTextAlignment.Center
     self.addSubview(keep)
     
-    var delete = UILabel(frame: CGRectMake(0, 0, viewSize.width/6, viewSize.width/6))
+    let delete = UILabel(frame: CGRectMake(0, 0, viewSize.width/6, viewSize.width/6))
     delete.center = CGPointMake(viewSize.width - viewSize.width/6, self.frame.size.height/2)
     delete.backgroundColor = UIColor.grayColor()
     delete.layer.masksToBounds = true
@@ -56,7 +56,7 @@ class Circle: UIView {
     view_Select.initWithSelectView(self.frame.size)
     self.addSubview(view_Select)
     
-    var pan = UIPanGestureRecognizer(target: self, action: "pan:")
+    let pan = UIPanGestureRecognizer(target: self, action: "pan:")
     self.addGestureRecognizer(pan)
     
     size = viewSize
@@ -75,7 +75,7 @@ class Circle: UIView {
   }
   
   func pan(gesture: UIPanGestureRecognizer) {
-    var touch = gesture.locationInView(self)
+    let touch = gesture.locationInView(self)
     var scale: CGFloat!
     
     switch (gesture.state) {

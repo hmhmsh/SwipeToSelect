@@ -179,11 +179,14 @@
 		4D0790BC1B57FD0400976569 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "長谷川瞬哉";
 				TargetAttributes = {
 					4D0790C31B57FD0400976569 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H73M8K8NPX;
 					};
 					4D0790DB1B57FD0400976569 = {
 						CreatedOnToolsVersion = 6.4;
@@ -371,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SwipeToSelect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 瞬哉 長谷川 (XUC5Q75B8X)";
 				INFOPLIST_FILE = SwipeToSelect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

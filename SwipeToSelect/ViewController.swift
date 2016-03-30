@@ -21,7 +21,7 @@ class ViewController: UIViewController, CircleDelegate {
     
     circle = Circle()
     circle.initWithCircle(self.view.frame.size)
-    var image = UIImage(named: "neko.png")
+    let image = UIImage(named: "neko.png")
     circle.setImage(image!)
     circle.delegate = self
     self.view.addSubview(circle)
@@ -34,10 +34,10 @@ class ViewController: UIViewController, CircleDelegate {
     circle.addSubviewToSelectView(label)
     
     for i in 0..<5 {
-      println("\(i)")
+      print("\(i)")
     }
     for (var i = 0; i < 5; i++) {
-      var printLabel = UILabel()
+      let printLabel = UILabel()
       printLabel.frame = CGRectMake(self.view.frame.size.width  * CGFloat(i) / 5.0, 15, self.view.frame.size.width / 5, 30);
       printLabel.layer.masksToBounds = true
       printLabel.layer.borderColor = UIColor.blackColor().CGColor
@@ -48,7 +48,7 @@ class ViewController: UIViewController, CircleDelegate {
   
   func selectKeep()
   {
-    println("Keep")
+    print("Keep")
     switch (label.tag) {
     case 1:
       
@@ -68,7 +68,7 @@ class ViewController: UIViewController, CircleDelegate {
   
   func selectDelete()
   {
-    println("Delete")
+    print("Delete")
   }
   
   override func didReceiveMemoryWarning() {
